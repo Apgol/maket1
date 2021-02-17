@@ -38,7 +38,7 @@ export default function Carusel(props) {
     <div className="slider-wrap">
       <Slider className="slider" {...settings}>
           {props.imgList.map(item => (
-            <img className="slider__item" src={item.img} key={item.id}/>
+            <img className="slider__item" src={item.img} alt="" key={item.id}/>
           ))}
       </Slider>
     </div>

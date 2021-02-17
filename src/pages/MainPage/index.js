@@ -8,7 +8,7 @@ function MainPages() {
   const [search, setSearch] = useState('')
   const [dateFilter, setDateFilter] = useState('unset')
   const [categoryFilter, setCategoryFilter] = useState('unset')
-
+  
   const cardData = [
     {
       id: 0,
@@ -71,9 +71,7 @@ function MainPages() {
 
   return (
     <div className="container">
-      <div className="slider">
-        <Carusel imgList={cardData}/>
-      </div>
+      <Carusel imgList={cardData}/>
       <div className="filter">
         <input className="filter__item" placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)}/>
         <select className="filter__item" onChange={(e) => setDateFilter(e.target.value)} value={dateFilter}>

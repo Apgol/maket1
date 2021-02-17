@@ -2,15 +2,14 @@ import './style.css';
 
 export default function CardList(props) {
 
-
   const changeSortFunction = (sort) => {
     switch(sort) {
       case 'unset':
-        return (a, b) => {return true}
+        return (a, b) => true
       case 'newFisrt':
-        return (a, b) => {return new Date(b.date) - new Date(a.date)}
+        return (a, b) => new Date(b.date) - new Date(a.date)
       case 'oldFirst':
-        return (a, b) => {return new Date(a.date) - new Date(b.date)}
+        return (a, b) => new Date(a.date) - new Date(b.date)
     }
   }
   
