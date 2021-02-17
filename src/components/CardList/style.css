@@ -1,0 +1,21 @@
+.card-list {
+    display: flex;
+    flex-direction: column;
+}
+.card-list__item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+.card-list__img {
+    width: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-right: 1px solid gray;
+}
+
+.card-list__content {
+    display: flex;
+    flex-direction: column;
+}

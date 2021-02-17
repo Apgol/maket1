@@ -1,0 +1,28 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.filter__item {
+    width: 200px;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.slider-wrap {
+    padding: 10px 30px;
+    border: 1px solid gray
+}
+
+.slider__item {
+    box-sizing: border-box;
+    padding: 0 15px;
+    object-fit: cover;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: gray
+}
